@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <roter-view></roter-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -13,4 +13,3 @@ export default {
 <style lang="scss">
   @import "./style/style";
 </style>
-
