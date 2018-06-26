@@ -1,0 +1,226 @@
+/*
+ * 1. 10px = 1em = 100% = 8pt
+ * 2. 防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常
+ */
+ html {
+  font-size: 75%; /* 1 */
+  -ms-text-size-adjust: 100%; /*2*/
+  -webkit-text-size-adjust: 100%; /*2*/
+  text-size-adjust: 100%; /*2*/
+}
+
+@media screen and (min-width: 390px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 90%;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+address, cite, dfn, em, var,i { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+[class*='icon-'] {
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a,a:focus,a:active,a:visited,a:focus-within{
+    text-decoration: none;
+    outline: 0;
+}
+.tc{
+    text-align: center;
+}
+.width{
+    width: 100%;
+}
+.height{
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex:1;
+}
+.fl{
+    float: left;
+}
+.flex-middle{
+    align-items: center;
+    align-content:center;
+}
+.flex-wrap{
+    flex-flow: row nowrap;
+}
+.flex-center{
+    justify-content: center;
+}
+.morning{
+    .six{
+        color: #666666;
+    }
+    .three{
+        color:#333333;
+    }
+    .nine{
+        color: #999999;
+    }
+    .greenbg{
+        background-color: #00cc99;
+    }
+    .orangebg{
+        background-color: #ff5500;
+    }
+}
+.night{
+    [class*='icon-'],.three,.six,.nine{
+        color: #999999;
+    }
+    .white{
+        background:#363636;
+    }
+    .icon-seven{
+        opacity: .8;;
+    }
+    .body{
+        background: #333;
+    }
+}
+.orange{
+    color: #ff5500;
+}
+.green{
+    color: #00cc99;
+}
+.halfradius{
+    border-radius: 50%;
+}
+.f-10{
+    font-size: 10px !important;
+}
+.f-11{
+    font-size: 11px !important;
+}
+.f-12{
+    font-size: 12px !important;
+}
+.f-13{
+    font-size: 13px !important;
+}
+.f-14{
+    font-size: 14px !important;
+}
+.f-16{
+    font-size: 16px !important;
+}
+.f-18{
+    font-size: 18px !important;
+}
+.f-20{
+    font-size: 20px !important;
+}
+.f-24{
+    font-size: 24px !important;
+}.f-28{
+    font-size: 28px !important;
+}
+.over-hid{
+    overflow: hidden;
+}
+.mirror{
+    transform:rotate(180deg);
+}
+.tl{
+    text-align: left;
+}
+.tr{
+    text-align: right;
+}
+.line-0{
+    line-height: 0;
+}
+.row{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    outline: 0;
+    border: 0;
+    font-size: 14px;
+    display: inline-block;
+}
+#app button.orange{
+    background-color: #ff5500;
+    color: #fff;
+    border:1px solid #ff5500;
+}
+#app.night button.orange{
+    opacity: .8;
+}
+#app button.nine{
+    background-color: #999999;
+    color: #fff;
+    border:1px solid #999999;
+}
+#app button.fff{
+    background-color: #ffffff;
+    color: #ff5500;
+    border:1px solid #ff5500;
+}
+.white{
+    background-color: #ffffff;
+}
+.body{
+    background: #f4f8fa;
+}
+.text-hidden{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item-three{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.line-20{
+    line-height: 20px;
+}
+.top_left_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.block{
+    display: block;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
